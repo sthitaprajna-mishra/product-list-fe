@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="desserts-wrapper">
+          <div class="desserts-heading">Desserts</div>
+          <div class="desserts"></div>
+
+          <!-- <div class="product">
+            <div class="product-card">
+              <img src="./assets/images/image-waffle-desktop.jpg" />
+              <div class="product-btn">
+                <img src="./assets/images/icon-add-to-cart.svg" />
+                <div>Add to Cart</div>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="product-header">Waffle</div>
+              <div class="product-title">Waffle with Berries</div>
+              <div class="product-price">$6.50</div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-creme-brulee-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-macaron-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-tiramisu-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-baklava-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-meringue-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-cake-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-brownie-desktop.jpg" />
+          </div>
+          <div class="product">
+            <img src="./assets/images/image-panna-cotta-desktop.jpg" />
+          </div> -->
+        </div>
+        <div class="cart-wrapper">
+          <div class="cart">
+            <div class="cart-heading">
+              Your Cart (<span id="totalCartItems">0</span>)
+            </div>
+            <div class="cart-body">
+              <!-- <img
+                src="./assets/images/illustration-empty-cart.svg"
+                alt="empty-cart"
+              /> -->
+              <!-- <div class="cart-item-wrapper">
+                <div class="cart-item">
+                  <div class="cart-item-name">Classic Tiramisu</div>
+                  <div class="cart-item-details">
+                    <div class="cart-item-quantity">1x</div>
+                    <div class="cart-item-price">@$5.50</div>
+                    <div class="cart-item-total">$5.50</div>
+                  </div>
+                </div>
+                <div class="cart-remove-item">
+                  <img
+                    src="./assets/images/icon-remove-item.svg"
+                    alt="remove-item"
+                  />
+                </div>
+              </div> -->
+              <!-- <div class="cart-text">Your added items will appear here</div> -->
+
+              <div class="cart-total hide">
+                <div class="cart-total-text">Order Total</div>
+                <div class="cart-total-price">
+                  <span>$</span><span id="cartTotalAmount"></span>
+                </div>
+              </div>
+              <div class="cart-carbon hide">
+                <div class="cart-carbon-icon">
+                  <img
+                    src="./assets/images/icon-carbon-neutral.svg"
+                    alt="carbon-neutral-icon"
+                  />
+                </div>
+                <div class="cart-carbon-text">
+                  This is a <span>carbon-neutral</span> delivery
+                </div>
+              </div>
+              <div class="cart-confirm-btn hide">
+                <div>Confirm Order</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal hide">
+      <div class="modal-content">
+        <div class="modal-icon">
+          <img
+            src="./assets/images/icon-order-confirmed.svg"
+            alt="order-confirmed"
+          />
+        </div>
+        <div class="modal-header">Order Confirmed</div>
+        <div class="modal-subheader">We hope you enjoy your food!</div>
+        <div class="modal-cart-item-list">
+          <!-- <div class="modal-cart-item">
+            <div class="modal-cart-item-left">
+              <div class="modal-cart-item-thumbnail">
+                <img
+                  src="./assets/images/image-tiramisu-thumbnail.jpg"
+                  alt="tiramisu-thumbnail"
+                />
+              </div>
+              <div class="modal-cart-item-details">
+                <div class="modal-cart-item-name">Classic Tiramisu</div>
+                <div class="modal-cart-item-data">
+                  <div class="modal-cart-item-quantity">1x</div>
+                  <div class="modal-cart-item-price">@ $5.50</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-cart-item-right">$5.50</div>
+          </div> -->
+          <div class="modal-cart-total hide">
+            <div class="modal-cart-total-text">Order Total</div>
+            <div class="modal-cart-total-price">$46.50</div>
+          </div>
+        </div>
+        <div class="modal-cart-btn-wrapper hide">
+          <div class="modal-cart-btn">Start New Order</div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
